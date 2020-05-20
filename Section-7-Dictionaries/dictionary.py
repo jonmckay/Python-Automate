@@ -10,6 +10,16 @@ print('name' in eggs)
 
 print('name' not in eggs)
 
+# Methods that will return list like values of the dictionaries keys, values, or both keys and values
+print(list(eggs.keys()))
+
+print(list(eggs.values()))
+
+print(list(eggs.items()))
+
+# For loops can be used with these methods
+for v in eggs.values():
+    print(v)
 
 
     
