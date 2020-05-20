@@ -21,5 +21,11 @@ print(list(eggs.items()))
 for v in eggs.values():
     print(v)
 
+# Multiple assignment can be used with dictionary.items() method. The method returns tuples (key, value)
+for k, v in eggs.items():
+    print(k, v)
+
+
+
 
     
