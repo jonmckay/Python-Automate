@@ -25,6 +25,13 @@ for v in eggs.values():
 for k, v in eggs.items():
     print(k, v)
 
+# 'in' and 'not in' ca be used with the above methods
+print('cat' in eggs.values())
+
+# To avoid crashing the program when searching for a value or key in a dictinoary, use the get() method
+print(eggs.get('age', 0))   # Defaults to 0 if age isn't found in the dictionary
+
+print(eggs.get('color', '')) # Default to blank string if key isn't found
 
 
 
