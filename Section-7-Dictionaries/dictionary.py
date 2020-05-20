@@ -11,19 +11,19 @@ print('name' in eggs)
 print('name' not in eggs)
 
 # Methods that will return list like values of the dictionaries keys, values, or both keys and values
-print(list(eggs.keys()))
-
-print(list(eggs.values()))
-
-print(list(eggs.items()))
+##print(list(eggs.keys()))
+##
+##print(list(eggs.values()))
+##
+##print(list(eggs.items()))
 
 # For loops can be used with these methods
-for v in eggs.values():
-    print(v)
+##for v in eggs.values():
+##    print(v)
 
 # Multiple assignment can be used with dictionary.items() method. The method returns tuples (key, value)
-for k, v in eggs.items():
-    print(k, v)
+##for k, v in eggs.items():
+##    print(k, v)
 
 # 'in' and 'not in' ca be used with the above methods
 print('cat' in eggs.values())
@@ -34,5 +34,7 @@ print(eggs.get('age', 0))   # Defaults to 0 if age isn't found in the dictionary
 print(eggs.get('color', '')) # Default to blank string if key isn't found
 
 
+# To set a default key value pair inside a dictionary if it doesn't exist already, use the setdefault() method
+eggs.setdefault('color', 'black')
 
     
